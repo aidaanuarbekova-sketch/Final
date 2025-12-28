@@ -31,7 +31,6 @@ public class SecurityConfig {
                         .anyRequest().authenticated()
                 )
                 .httpBasic(Customizer.withDefaults());
-//                .formLogin(form -> form.disable());
 
         return http.build();
     }
